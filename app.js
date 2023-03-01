@@ -38,4 +38,13 @@ app.register(indexPlugin, { prefix: "/index" });
 app.register(calculatorPlugin, { prefix: "/calculator" });
 
 
+app.register((fastify, options, done) => { 
+    fastify.get("/", {
+        schema: {},
+        handler: async(req,res) =>{res.send("Hello Alberto")}
+    });
+    done();
+})
+
+
 export default app;
