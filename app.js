@@ -41,7 +41,7 @@ app.register(calculatorPlugin, { prefix: "/calculator" });
 app.register((fastify, options, done) => { 
     fastify.get("/", {
         schema: {},
-        handler: async(req,res) =>{res.send("Hello Alberto")}
+        handler: async(req,res) =>{res.send("Hello Francesco")}
     });
     done();
 })
