@@ -1,7 +1,7 @@
 name: ECR deploy CI/CD pipeline
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   deploy:
