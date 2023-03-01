@@ -1,0 +1,43 @@
+{
+  "name": "fastify-boilerplate",
+  "version": "1.0.0",
+  "description": "- Simple backend server boilerplate with 2 routes, with two APIs each\r - Test with `jest` and `jest-json-schema`\r - Dockerfile for the server\r - OpenAPI 3.1 w/ RapiDoc",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "test:lin": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles",
+    "test:win": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "lint:check": "eslint -c ./.eslintrc.cjs .",
+    "lint:fix": "eslint -c ./.eslintrc.cjs . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/static": "^6.6.0",
+    "@fastify/swagger": "^8.2.1",
+    "ajv": "^8.11.2",
+    "ajv-formats": "^2.1.1",
+    "fastify": "^4.13.0",
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "jest-json-schema": "^5.0.0",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertoSpinella/fastify-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlbertoSpinella/fastify-boilerplate/issues"
+  },
+  "homepage": "https://github.com/AlbertoSpinella/fastify-boilerplate#readme"
+}

@@ -1,0 +1,17 @@
+### plusCalculator
+POST http://localhost:3000/calculate/plus HTTP/1.1
+Content-Type: application/json
+
+{
+    "a": 1,
+    "b": 3
+}
+
+### minusCalculator
+POST http://localhost:3000/calculate/minus HTTP/1.1
+Content-Type: application/json
+
+{
+    "a": 1,
+    "b": 3
+}
